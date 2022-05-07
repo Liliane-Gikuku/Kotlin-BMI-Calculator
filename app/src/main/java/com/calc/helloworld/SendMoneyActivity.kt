@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class bmiCalculatorActivity : AppCompatActivity() {
-    lateinit var btnMoney: Button
+class SendMoneyActivity : AppCompatActivity() {
+    lateinit var btnCancel: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bmi_calculator)
-        btnMoney = findViewById(R.id.btnMoney)
-        btnMoney.setOnClickListener {
-            val intent = Intent(this,SendMoneyActivity::class.java)
+        setContentView(R.layout.activity_send_money)
+        btnCancel = findViewById(R.id.btnCancel)
+        btnCancel.setOnClickListener {
+            val intent = Intent(this,bmiCalculatorActivity::class.java)
             startActivity(intent)
 
         }
